@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franco Uribe</title>
+  <meta name="description" content="Portafolio de Franco Uribe, desarrollador FullStack y estudiante de Ingeniería de Sistemas de Información (UPC).">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== Barra superior ===================== -->
+  <header class="topbar">
+    <div class="topbar__group">
+      <span class="workspaces" aria-hidden="true">
+        <span style="background: var(--pink)"></span>
+        <span style="background: var(--yellow)"></span>
+        <span style="background: var(--green)"></span>
+        <span style="background: var(--cyan)"></span>
+      </span>
+      <span><span class="c-teal">franco@fractal</span><span class="c-muted">:~/portafolio$</span></span>
+    </div>
+    <div class="topbar__group">
+      <span class="status">disponible</span>
+      <span class="c-cyan">UPC · 8vo ciclo</span>
+      <span class="c-pink">Lima, PE</span>
+      <span class="c-yellow">ES · EN</span>
+      <span class="badge">2026</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===================== Dock / navegación ===================== -->
+    <nav class="dock" aria-label="Secciones">
+      <ul class="dock__list">
+        <li>
+          <a class="dock__link c-orange" href="#inicio">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+            inicio
+          </a>
+        </li>
+        <li>
+          <a class="dock__link c-green" href="#experiencia">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"/></svg>
+            experiencia
+          </a>
+        </li>
+        <li>
+          <a class="dock__link c-cyan" href="#stack">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></svg>
+            stack
+          </a>
+        </li>
+        <li>
+          <a class="dock__link c-pink" href="#educacion">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>
+            educación
+          </a>
+        </li>
+        <li>
+          <a class="dock__link c-purple" href="#contacto">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+            contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===================== Hero ===================== -->
+    <section id="inicio" class="hero">
+      <div class="hero__grid">
+
+        <!-- Columna izquierda -->
+        <div class="hero__col hero__col--left">
+          <div class="panel avatar">
+            <img src="Deidad.jpg" alt="Avatar de Franco Uribe">
+          </div>
+
+          <div id="educacion" class="panel education">
+            <h2 class="education__title">Educación</h2>
+            <div class="education__dates">UPC · 2022 — en curso</div>
+
+            <div class="cycles" aria-label="Avance: ciclo 8 de 10">
+              <span class="cycles__label">C1</span><span class="cycles__label">C2</span><span class="cycles__label">C3</span><span class="cycles__label">C4</span><span class="cycles__label">C5</span>
+              <span class="cycles__done">✓</span><span class="cycles__done">✓</span><span class="cycles__done">✓</span><span class="cycles__done">✓</span><span class="cycles__done">✓</span>
+              <span class="cycles__label">C6</span><span class="cycles__label">C7</span><span class="cycles__label">C8</span><span class="cycles__label">C9</span><span class="cycles__label">C10</span>
+              <span class="cycles__done">✓</span><span class="cycles__done">✓</span><span class="cycles__current">●</span><span class="cycles__pending">·</span><span class="cycles__pending">·</span>
+            </div>
+
+            <div class="education__career">Ingeniería de Sistemas de Información</div>
+            <div class="education__school">Universidad Peruana de Ciencias Aplicadas</div>
+          </div>
+        </div>
+
+        <!-- Columna central -->
+        <div class="hero__col hero__col--center">
+          <div class="panel intro">
+            <div class="intro__hello">Hola, soy</div>
+            <h1 class="intro__name">FRANCO<span> : </span>URIBE</h1>
+            <p class="intro__text">Desarrollador FullStack &amp; gestor de proyectos. Estudiante de Ingeniería de Sistemas de Información.</p>
+          </div>
+
+          <div class="panel meters">
+            <div class="meter c-cyan">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18c-3-3-3-15 0-18z"/></svg>
+              <span class="meter__label" style="color: var(--text)">Español</span>
+              <div class="meter__track"><div class="meter__fill" style="width: 100%"></div></div>
+              <span class="meter__value">nativo</span>
+            </div>
+            <div class="meter c-pink">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9"/><path d="M8 3v2c0 5-2 9-4 11"/><path d="M6 10c1 3 4 5 7 6"/><path d="M13 21l4-10 4 10"/><path d="M14.5 18h5"/></svg>
+              <span class="meter__label" style="color: var(--text)">Inglés</span>
+              <div class="meter__track"><div class="meter__fill" style="width: 58%"></div></div>
+              <span class="meter__value">B1/B2</span>
+            </div>
+            <div class="meter c-yellow">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+              <span class="meter__label" style="color: var(--text)">Carrera</span>
+              <div class="meter__track"><div class="meter__fill" style="width: 80%"></div></div>
+              <span class="meter__value">8 / 10</span>
+            </div>
+          </div>
+
+          <div class="panel now">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span>Ahora — FullStack @ Fractal · Banco de Talentos</span>
+          </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="hero__col hero__col--right">
+          <div class="panel ring-card">
+            <div class="ring" aria-hidden="true">
+              <div class="ring__inner">
+                <svg class="icon" width="28" height="28" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="panel vertical" aria-hidden="true">
+            <span>portafolio</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== Experiencia ===================== -->
+    <section id="experiencia" class="experience reveal">
+      <h2 class="section-title">~/EXPERIENCIA</h2>
+
+      <div class="panel window">
+        <div class="window__titlebar">
+          <svg class="window__home" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 8h-3v9H6v-9H3z"/></svg>
+          <span class="window__controls" aria-hidden="true">
+            <span class="ctrl-min"></span><span class="ctrl-max"></span><span class="ctrl-close">×</span>
+          </span>
+        </div>
+        <div class="window__menu" aria-hidden="true">
+          <span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Help</span>
+        </div>
+        <div class="window__path" aria-hidden="true">
+          <span>←</span><span>→</span><span>↑</span>
+          <span class="window__crumb">experiencia</span>
+        </div>
+
+        <div class="files">
+          <aside class="sidebar">
+            <div class="sidebar__heading">DEVICES</div>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">UPC</li>
+              <li class="sidebar__item">Lima, Perú</li>
+            </ul>
+            <div class="sidebar__heading">PLACES</div>
+            <ul class="sidebar__list">
+              <li class="sidebar__item sidebar__item--active">fractal</li>
+              <li class="sidebar__item">vodaris-network</li>
+              <li class="sidebar__item" style="--dot: var(--yellow)">glam-shoes</li>
+            </ul>
+          </aside>
+
+          <div class="jobs">
+
+            <article class="job">
+              <div class="folder folder--pink" aria-hidden="true"></div>
+              <div class="job__body">
+                <div class="job__head">
+                  <h3 class="job__name c-pink">Fractal</h3>
+                  <span class="job__meta">Empresa de desarrollo en TI · Lima, Perú</span>
+                  <span class="tag">actual</span>
+                </div>
+                <div class="job__role c-yellow">Desarrollador FullStack — Gestor de proyectos</div>
+                <p class="job__desc">Mantenimiento del proyecto <span class="c-cyan">Banco de Talentos</span>, una plataforma que funciona como gestor para el área de recursos humanos.</p>
+              </div>
+            </article>
+
+            <article class="job">
+              <div class="folder folder--green" aria-hidden="true"></div>
+              <div class="job__body">
+                <div class="job__head">
+                  <h3 class="job__name c-green">Vodaris Network</h3>
+                  <span class="job__meta">Servidor de Minecraft</span>
+                </div>
+                <div class="job__role c-yellow">Administrador</div>
+                <p class="job__desc">Administración del <span class="c-cyan">equipo de moderación</span> del servidor: coordinación del staff y del orden en la comunidad.</p>
+              </div>
+            </article>
+
+            <article class="job">
+              <div class="folder folder--yellow" aria-hidden="true"></div>
+              <div class="job__body">
+                <div class="job__head">
+                  <h3 class="job__name c-yellow">Glam Shoes</h3>
+                  <span class="job__meta">Tienda de ropa · Lima, Perú</span>
+                </div>
+                <div class="job__role c-cyan">Desarrollador Web</div>
+                <p class="job__desc">Diseño de la <span class="c-pink">pasarela de pagos</span> y del <span class="c-green">sistema de registro de productos</span> de la tienda.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Stack ===================== -->
+    <section id="stack" class="stack reveal">
+      <h2 class="section-title">~/STACK</h2>
+
+      <div class="panel window">
+        <div class="window__titlebar">
+          <svg class="window__home" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 8h-3v9H6v-9H3z"/></svg>
+          <span class="window__controls" aria-hidden="true">
+            <span class="ctrl-min"></span><span class="ctrl-max"></span><span class="ctrl-close">×</span>
+          </span>
+        </div>
+
+        <div class="editor__tab"><span class="c-cyan">▍</span> <strong>stack.lua</strong></div>
+
+        <div class="editor__scroll">
+<pre class="code"><span class="ln">  1 </span><span class="kw">local</span> franco = <span class="fn">require</span>(<span class="str">'franco.uribe'</span>)
+<span class="ln">  2 </span>
+<span class="ln">  3 </span><span class="kw">local</span> stack = {
+<span class="ln">  4 </span>  <span class="key">lenguajes</span> = { <span class="str">'C++'</span>, <span class="str">'C'</span>, <span class="str">'C# (ADO, .NET)'</span>, <span class="str">'JavaScript'</span>, <span class="str">'Python'</span>, <span class="str">'HTML'</span>, <span class="str">'CSS'</span> },
+<span class="ln">  5 </span>  <span class="key">frameworks</span> = { <span class="str">'Node.js'</span>, <span class="str">'Express'</span>, <span class="str">'Angular'</span>, <span class="str">'Spring Boot'</span> },
+<span class="ln">  6 </span>  <span class="key">bases_datos</span> = {
+<span class="ln">  7 </span>    <span class="fn">nosql</span> = { <span class="str">'MongoDB'</span>, <span class="str">'Mongoose'</span>, <span class="str">'PyMongo'</span> },
+<span class="ln">  8 </span>    <span class="fn">sql</span>   = { <span class="str">'SQL Server'</span>, <span class="str">'MySQL'</span>, <span class="str">'MariaDB'</span>, <span class="str">'PostgreSQL'</span>, <span class="str">'Access'</span> },
+<span class="ln">  9 </span>  },
+<span class="ln"> 10 </span>  <span class="key">cloud_devops</span> = { <span class="str">'Google Cloud'</span>, <span class="str">'AWS'</span>, <span class="str">'Azure'</span>, <span class="str">'Git'</span>, <span class="str">'Docker'</span>,
+<span class="ln"> 11 </span>                   <span class="str">'Render'</span>, <span class="str">'Vercel'</span>, <span class="str">'Railway'</span>, <span class="str">'Heroku'</span> },
+<span class="ln"> 12 </span>  <span class="key">herramientas</span> = { <span class="str">'Power BI'</span>, <span class="str">'Excel'</span>, <span class="str">'MS Office'</span>, <span class="str">'VS Code'</span>, <span class="str">'Visual Studio 2022'</span>, <span class="str">'RStudio'</span> },
+<span class="ln"> 13 </span>  <span class="key">negocios</span> = <span class="str">'gestión de productos, startups y mini empresas'</span>,
+<span class="ln"> 14 </span>}
+<span class="ln"> 15 </span>
+<span class="ln"> 16 </span><span class="kw">function</span> franco.<span class="fn">build</span>(idea)
+<span class="ln"> 17 </span>  <span class="kw">if</span> idea.ready == <span class="bool">true</span> <span class="kw">then</span>
+<span class="ln"> 18 </span>    <span class="kw">return</span> ship(idea, stack)
+<span class="ln"> 19 </span>  <span class="kw">end</span>
+<span class="ln"> 20 </span><span class="kw">end</span><span class="cursor"> </span></pre>
+        </div>
+
+        <div class="statusline">
+          <div><span class="mode">NORMAL</span><span class="file">stack.lua</span></div>
+          <span class="pos">100%</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Contacto ===================== -->
+  <footer id="contacto" class="contact reveal">
+    <div class="contact__inner">
+      <div class="contact__text">
+        <h2 class="contact__title">Hablemos, nos vemos</h2>
+        <div class="contact__mail">francongg31@gmail.com</div>
+        <div class="contact__info">Lima, Perú · Español nativo · Inglés B1/B2</div>
+      </div>
+
+      <ul class="contact__links">
+        <li>
+          <a class="contact__link c-pink" href="mailto:francongg31@gmail.com">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+            correo
+          </a>
+        </li>
+        <li>
+          <a class="contact__link c-green" href="tel:+51924380452">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>
+            +51 924 380 452
+          </a>
+        </li>
+        <li>
+          <a class="contact__link c-cyan" href="https://linkedin.com/in/surui31" target="_blank" rel="noopener">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg>
+            linkedin/surui31
+          </a>
+        </li>
+        <li>
+          <a class="contact__link c-purple" href="#inicio">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+            volver arriba
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
